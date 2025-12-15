@@ -2,7 +2,8 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Zadanie 3 – C++</title>
+    <title>Zadanie 3 – Program w C++</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,32 +12,51 @@
         }
 
         img {
-            width: 50%;
+            width: 33%;                 /* obraz mniejszy – ok. 1/3 strony */
             float: left;
-            margin: 0 20px 20px 0; 
+            margin: 0 25px 20px 0;      /* odstęp między obrazem a tekstem */
+            border: 1px solid #ccc;
         }
 
         audio, video {
             display: block;
             margin: 20px 0;
         }
+
+        h1, h2 {
+            clear: both;
+        }
     </style>
 </head>
+
 <body>
 
-<h1>Zadanie 3 – Program w C++</h1>
+<h1>Zadanie 3 – Konwersja liczby na system binarny</h1>
 
-<img src="program.png" alt="Zrzut ekranu programu C++">
+<img src="program.png" alt="Zrzut ekranu programu w C++">
 
 <p>
-Program napisany w języku C++ służy do zamiany liczby dziesiętnej na zapis binarny.
-Wykorzystuje on funkcję, pętlę <b>while</b> oraz operacje modulo i dzielenia.
-Wynik konwersji jest zwracany jako napis i wyświetlany w konsoli.
+Przedstawiony program został napisany w języku C++ i jego zadaniem jest
+zamiana liczby zapisanej w systemie dziesiętnym na zapis binarny.
+Program pobiera od użytkownika dwie liczby całkowite, z których jedna
+jest przekazywana do funkcji odpowiedzialnej za wykonanie konwersji.
 </p>
 
 <p>
-Kod programu jest czytelny i pokazuje podstawowe mechanizmy programowania
-strukturalnego w języku C++.
+W funkcji wykorzystana jest pętla <b>while</b>, która działa do momentu,
+gdy przetwarzana liczba jest większa od zera. W każdej iteracji pętli
+obliczana jest reszta z dzielenia liczby przez dwa, co pozwala uzyskać
+kolejne cyfry zapisu binarnego. Uzyskane wartości są zamieniane na znaki
+i dopisywane na początek zmiennej typu <b>string</b>, dzięki czemu wynik
+ma poprawną kolejność.
+</p>
+
+<p>
+Po zakończeniu działania pętli funkcja zwraca gotowy napis zawierający
+liczbę w systemie binarnym. Następnie wynik ten jest wyświetlany w konsoli
+w funkcji głównej programu. Program stanowi przykład zastosowania funkcji,
+pętli oraz operacji na łańcuchach znaków w języku C++ i pomaga lepiej
+zrozumieć zasadę działania systemu binarnego.
 </p>
 
 <h2>Nagranie audio – omówienie programu</h2>
@@ -51,7 +71,12 @@ strukturalnego w języku C++.
     Twoja przeglądarka nie obsługuje odtwarzacza wideo.
 </video>
 
-
+<h2>Materiały pomocnicze</h2>
+<p>
+<a href="https://www.cplusplus.com/doc/tutorial/" target="_blank">
+https://www.cplusplus.com/doc/tutorial/
+</a>
+</p>
 
 </body>
 </html>
